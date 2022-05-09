@@ -53,7 +53,7 @@ const SectionImage = () => {
           // end: () => "+=100%",
           scrub: 1,
           toggleActions: "play none none reverse",
-          markers: true,
+          // markers: true,
         },
       });
       time.fromTo(
