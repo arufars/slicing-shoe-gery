@@ -1,11 +1,13 @@
-import React from "react";
+import { Footer, Navbar } from "../components"
 
 const Container = ({ children }) => {
   return (
-    <div className='container px-10 2xl:px-0 font-raleway mx-auto md:max-w-6xl xl:max-w-7xl md:w-full py-9'>
+    <div className='container mx-auto px-10 py-9 font-raleway max-w-full md:w-full md:max-w-6xl xl:max-w-7xl 2xl:px-0'>
+      <Navbar />
       {children}
+      <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Container;
+export default Container

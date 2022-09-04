@@ -3,7 +3,7 @@ export const Subtitle = ({ name }) => {
 };
 
 export const Content = ({ name }) => {
-  return <p className=' text-lg  font-light  leading-[1.375rem]'>{name}</p>;
+  return <p className=' text-lg  font-light lg:leading-[1.375rem] leading-relaxed'>{name}</p>;
 };
 
 export const ImageSec = ({ name, nodeRef, className }) => {

@@ -28,10 +28,10 @@ const Navbar = () => {
     <header className='px-8 text-white'>
       <div ref={navbarRef} className='relative'>
         <nav className='relative z-10 flex justify-between'>
-          <div>
+          <div className="cursor-pointer">
             <Logo className='logo text-2xl transition-all will-change-transform' />
           </div>
-          <ul ref={ulRef} className='flex space-x-[3.875rem]'>
+          <ul ref={ulRef} className='hidden lg:flex space-x-[3.875rem]'>
             {navItems.map((item) => (
               <NavLink
                 key={item.id}
