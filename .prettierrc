@@ -1,8 +1,9 @@
 {
-    "jsxSingleQuote": true,
-    "semi": false,
-    "bracketSameLine": true,
-    "arrowParens": "avoid",
-    "htmlWhitespaceSensitivity": "strict",
-    "proseWrap": "always"
+  "jsxSingleQuote": true,
+  "semi": false,
+  "bracketSameLine": true,
+  "arrowParens": "avoid",
+  "htmlWhitespaceSensitivity": "strict",
+  "proseWrap": "always"
+  
 }

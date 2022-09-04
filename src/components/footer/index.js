@@ -4,8 +4,8 @@ import { Copyright, Form } from "./footer"
 const Footer = () => {
   return (
     <div className='border-t-2'>
-      <div className='mx-auto max-w-screen-xl justify-between py-10 px-4 text-gray-800 sm:flex sm:px-6'>
-        <div className='p-5 sm:w-8/12'>
+      <div className='mx-auto max-w-screen-xl justify-between py-10  text-gray-800 sm:flex '>
+        <div className='p-5'>
           <Logo className='mb-4 text-3xl' />
           <ul className='flex text-sm uppercase text-gray-500'>
             {navFooter.map(item => (
@@ -17,7 +17,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className='p-5 sm:w-4/12'>
+        <div className='p-5'>
           <Form />
           <a
             href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj0jeXWg8v3AhWh6XMBHe1ZABQQFnoECBAQAQ&url=https%3A%2F%2Funsplash.com%2F&usg=AOvVaw07uHYdeyZQMneg6p8JTUC3'

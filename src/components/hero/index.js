@@ -33,8 +33,8 @@ const Hero = () => {
 
   return (
     <>
-      <section className='relative'>
-        <div className='flex h-[530px] '>
+      <section className='relative mt-20 lg:mt-0'>
+        <div className='flex lg:h-[530px]'>
           <div className='w-full self-center md:w-5/12 2xl:w-6/12 '>
             <HeroTitle nodeRef={titleRef} className='will-change-transform' />
             <HeroSubtitle
@@ -44,8 +44,8 @@ const Hero = () => {
           </div>
         </div>
         <section ref={arrowRef}>
-          <div className='absolute top-[85%] w-fit 2xl:relative'>
-            <Arrow className=' relative h-20 animate-bounce 2xl:h-auto' />
+          <div className='absolute top-[120%] lg:top-[85%]  w-fit 2xl:relative'>
+            <Arrow className='relative h-20 animate-bounce fill-black 2xl:h-auto' />
           </div>
         </section>
       </section>
