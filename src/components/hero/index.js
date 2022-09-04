@@ -1,43 +1,46 @@
-import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
-import { ReactComponent as Arrow } from "../../assets/Arrow.svg";
-import { HeroSubtitle, HeroTitle } from "./hero";
+import gsap from "gsap"
+import React, { useEffect, useRef } from "react"
+import { ReactComponent as Arrow } from "../../assets/Arrow.svg"
+import { HeroSubtitle, HeroTitle } from "./hero"
 
 const Hero = () => {
-  const titleRef = useRef(null);
-  const subtitleRef = useRef(null);
-  const arrowRef = useRef(null);
+  const titleRef = useRef(null)
+  const subtitleRef = useRef(null)
+  const arrowRef = useRef(null)
 
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { ease: "power2" } });
-    const title = titleRef.current;
-    const subtitle = subtitleRef.current;
+    const tl = gsap.timeline({ defaults: { ease: "power2" } })
+    const title = titleRef.current
+    const subtitle = subtitleRef.current
     tl.fromTo(
       title,
       {
         opacity: 0,
         y: "30%",
       },
-      { opacity: 1, y: "0%", duration: 1.3, delay: .9 }
-    );
+      { opacity: 1, y: "0%", duration: 1.3, delay: 0.9 }
+    )
     tl.fromTo(
       subtitle,
       {
         opacity: 0,
         y: "80%",
       },
-      { opacity: 1, y: "0%", duration: .9 }
-    );
-    tl.fromTo(arrowRef.current, { opacity: 0 }, { opacity: 1, duration: 0.8 });
-  }, []);
+      { opacity: 1, y: "0%", duration: 0.9 }
+    )
+    tl.fromTo(arrowRef.current, { opacity: 0 }, { opacity: 1, duration: 0.8 })
+  }, [])
 
   return (
     <>
       <section className='relative'>
         <div className='flex h-[530px] '>
-          <div className='w-5/12 self-center 2xl:w-6/12 '>
-            <HeroTitle nodeRef={titleRef}  className="will-change-transform"/>
-            <HeroSubtitle nodeRef={subtitleRef}  className="will-change-transform"/>
+          <div className='w-full self-center md:w-5/12 2xl:w-6/12 '>
+            <HeroTitle nodeRef={titleRef} className='will-change-transform' />
+            <HeroSubtitle
+              nodeRef={subtitleRef}
+              className='will-change-transform'
+            />
           </div>
         </div>
         <section ref={arrowRef}>
@@ -47,7 +50,7 @@ const Hero = () => {
         </section>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
