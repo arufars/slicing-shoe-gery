@@ -90,18 +90,18 @@ const SectionImage = () => {
   }
 
   return (
-    <div className='relative z-20 my-96'>
+    <div className='relative top-52 z-20 my-96  lg:top-0'>
       {/* my-96 */}
       {DataSection.map(({ id, src, subtitle, content }) => (
         <Section
           key={id}
           // nodeRef={(node) => { revealRef.current.push(node); }}
           nodeRef={addRefs}
-          className={`.image flex flex-col items-center gap-y-20 gap-x-20 will-change-auto lg:flex-row lg:gap-y-0   ${
+          className={`.image flex flex-col items-center gap-y-20 gap-x-20 will-change-auto lg:flex-row lg:gap-y-0  ${
             id % 2 ? "lg:flex-row" : "lg:flex-row-reverse"
           }`}>
           <article
-            className={`lg:w-6/12 w-full   ${
+            className={`w-full lg:w-6/12   ${
               id % 2 ? "lg:text-right" : "lg:text-left"
             } text-center `}>
             <div className='mb-3 '>
@@ -114,7 +114,7 @@ const SectionImage = () => {
               <Content name={content} />
             </div>
           </article>
-          <picture className='lg:w-6/12 w-full'>
+          <picture className='w-full lg:w-6/12'>
             <div className=' drop_shadow relative h-[304px] overflow-hidden 2xl:h-[350px] '>
               <ImageSec name={src} nodeRef={addRefImg} />
             </div>

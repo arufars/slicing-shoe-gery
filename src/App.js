@@ -1,11 +1,6 @@
 import gsap from "gsap"
 import React, { useEffect, useRef } from "react"
-import {
-  Hero,
-  Image,
-  Overlay,
-  SectionImage,
-} from "./components"
+import { Hero, Image, Overlay, SectionImage } from "./components"
 import Container from "./config/Container"
 
 const App = () => {
@@ -16,7 +11,7 @@ const App = () => {
     })
   }, [])
   return (
-    <div ref={bodyRef} className='body relative  flex h-screen'>
+    <div ref={bodyRef} className='body relative flex h-screen'>
       <Container>
         <Hero />
         <SectionImage />
