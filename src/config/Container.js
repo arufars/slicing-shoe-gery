@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "../components"
+import { Footer, Navbar } from '../components'
 
 const Container = ({ children }) => {
   return (
