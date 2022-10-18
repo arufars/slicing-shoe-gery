@@ -1,10 +1,14 @@
 export const Subtitle = ({ name }) => {
-  return <h1 className='text-2xl font-bold leading-7'>{name} </h1>;
-};
+  return <h1 className='text-2xl font-bold leading-7'>{name} </h1>
+}
 
 export const Content = ({ name }) => {
-  return <p className=' text-lg  font-light lg:leading-[1.375rem] leading-relaxed'>{name}</p>;
-};
+  return (
+    <p className=' text-lg  font-light lg:leading-[1.375rem] leading-relaxed'>
+      {name}
+    </p>
+  )
+}
 
 export const ImageSec = ({ name, nodeRef, className }) => {
   return (
@@ -14,8 +18,8 @@ export const ImageSec = ({ name, nodeRef, className }) => {
       className={`absolute object-cover w-full h-full ${className}`}
       alt={name}
     />
-  );
-};
+  )
+}
 
 // Data for the component
 export const DataSection = [
@@ -40,4 +44,4 @@ export const DataSection = [
       "Lightweight, woven material  is durable and provide structure and support.",
     src: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
   },
-];
+]

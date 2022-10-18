@@ -1,11 +1,11 @@
 export const Logo = ({ name, sub, className, ref }) => {
   return (
     <h1 ref={ref} className={`font-bold leading-7 text-black ${className}`}>
-      {name ? name : "Shoe"}
-      <span className='text-red-600'>{sub ? sub : "Brand"}</span>
+      {name || "Shoe"}
+      <span className='text-red-600'>{sub || "Brand"}</span>
     </h1>
-  );
-};
+  )
+}
 
 export const NavLink = ({ id, link, name, className, nodeRef }) => {
   return (
@@ -16,8 +16,8 @@ export const NavLink = ({ id, link, name, className, nodeRef }) => {
         </li>
       </div>
     </>
-  );
-};
+  )
+}
 
 export const navItems = [
   {
@@ -35,7 +35,7 @@ export const navItems = [
     name: "PLAYERS",
     link: "/players",
   },
-];
+]
 
 export const navFooter = [
   {
@@ -53,4 +53,4 @@ export const navFooter = [
     name: "Contact Us",
     link: "/contact",
   },
-];
+]

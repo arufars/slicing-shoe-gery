@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import { Content, DataSection, ImageSec, Subtitle } from "./sectionComponent"
 import Section from "../../config/Section"
 import gsap from "gsap"
@@ -18,7 +18,7 @@ const SectionImage = () => {
   useEffect(() => {
     // gsap in Content Section scrollTrigger animation
     itemRef.current.map((item, index) => {
-      let time = gsap.timeline({
+      const time = gsap.timeline({
         scrollTrigger: {
           trigger: item,
           start: "top center+=150",
@@ -47,8 +47,8 @@ const SectionImage = () => {
     })
 
     // gsap in image scale animation
-    imageSrc.current.map((item, index) => {
-      let time = gsap.timeline({
+    imageSrc.current.map(item => {
+      const time = gsap.timeline({
         scrollTrigger: {
           trigger: item,
           // start: "top center+=10",
