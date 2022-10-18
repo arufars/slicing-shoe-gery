@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react'
-import { Content, DataSection, ImageSec, Subtitle } from './sectionComponent'
-import Section from '../../config/Section'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all'
+import React, { useEffect, useRef } from "react"
+import { Content, DataSection, ImageSec, Subtitle } from "./sectionComponent"
+import Section from "../../config/Section"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/all"
 
 const SectionImage = () => {
   // Get Dom element
@@ -21,24 +21,24 @@ const SectionImage = () => {
       const time = gsap.timeline({
         scrollTrigger: {
           trigger: item,
-          start: 'top center+=150',
-          end: () => '+=100%',
-          scrub: 1
+          start: "top center+=150",
+          end: () => "+=100%",
+          scrub: 1,
           // markers: true,
-        }
+        },
       })
       time.fromTo(
         item,
-        { autoAlpha: 0, clipPath: 'polygon(0 0, 0% 0, 0% 100%, 0 100%)' },
+        { autoAlpha: 0, clipPath: "polygon(0 0, 0% 0, 0% 100%, 0 100%)" },
         {
           duration: 10,
           autoAlpha: 1,
-          ease: 'power2',
-          clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'
+          ease: "power2",
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
         }
       )
       time.fromTo(
-        item.querySelectorAll('.image'),
+        item.querySelectorAll(".image"),
         { x: 100, autoAlpha: 0 },
         { x: 0, autoAlpha: 1, duration: 2, stagger: 0.3, delay: 2 }
       )
@@ -52,13 +52,13 @@ const SectionImage = () => {
         scrollTrigger: {
           trigger: item,
           // start: "top center+=10",
-          start: 'top center-=10%',
-          end: 'bottom-=20% center',
+          start: "top center-=10%",
+          end: "bottom-=20% center",
           // end: () => "+=100%",
           scrub: 1,
-          toggleActions: 'play none none reverse'
+          toggleActions: "play none none reverse",
           // markers: true,
-        }
+        },
       })
       time.fromTo(
         item,
@@ -70,7 +70,7 @@ const SectionImage = () => {
           delay: 0,
           stagger: 0.3,
           autoAlpha: 1,
-          ease: 'power2'
+          ease: "power2",
         }
       )
       return time
@@ -98,22 +98,19 @@ const SectionImage = () => {
           // nodeRef={(node) => { revealRef.current.push(node); }}
           nodeRef={addRefs}
           className={`.image flex flex-col items-center gap-y-20 gap-x-20 will-change-auto lg:flex-row lg:gap-y-0  ${
-            id % 2 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-          }`}
-        >
+            id % 2 ? "lg:flex-row" : "lg:flex-row-reverse"
+          }`}>
           <article
             className={`w-full lg:w-6/12   ${
-              id % 2 ? 'lg:text-right' : 'lg:text-left'
-            } text-center `}
-          >
+              id % 2 ? "lg:text-right" : "lg:text-left"
+            } text-center `}>
             <div className='mb-3 '>
               <Subtitle name={subtitle} />
             </div>
             <div
               className={`w-full lg:w-7/12  ${
-                id % 2 ? 'lg:ml-auto ' : 'lg:mr-auto'
-              }`}
-            >
+                id % 2 ? "lg:ml-auto " : "lg:mr-auto"
+              }`}>
               <Content name={content} />
             </div>
           </article>

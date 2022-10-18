@@ -2,8 +2,7 @@ const Section = ({ children, className, nodeRef }) => {
   return (
     <div ref={nodeRef}>
       <section
-        className={`container mx-auto my-12 lg:my-40 max-w-full md:max-w-5xl ${className}`}
-      >
+        className={`container mx-auto my-12 lg:my-40 max-w-full md:max-w-5xl ${className}`}>
         {children}
       </section>
       ;

@@ -25,23 +25,23 @@ export const ImageSec = ({ name, nodeRef, className }) => {
 export const DataSection = [
   {
     id: 1,
-    subtitle: 'Lightweight',
+    subtitle: "Lightweight",
     content:
-      'Upper mesh material provides proper ventilation and reduction in the weight of the shoes.',
-    src: 'https://images.unsplash.com/photo-1606297255627-c58c609140e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUzfHxzaG9lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
+      "Upper mesh material provides proper ventilation and reduction in the weight of the shoes.",
+    src: "https://images.unsplash.com/photo-1606297255627-c58c609140e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUzfHxzaG9lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
   },
   {
     id: 2,
-    subtitle: 'Flexibility',
+    subtitle: "Flexibility",
     content:
-      'Soft, flexible soles will allow the walker to push off easly with each step.',
-    src: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+      "Soft, flexible soles will allow the walker to push off easly with each step.",
+    src: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 3,
-    subtitle: ' Durability ',
+    subtitle: " Durability ",
     content:
-      'Lightweight, woven material  is durable and provide structure and support.',
-    src: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
-  }
+      "Lightweight, woven material  is durable and provide structure and support.",
+    src: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+  },
 ]
