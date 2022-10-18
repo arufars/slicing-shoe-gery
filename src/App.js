@@ -1,13 +1,13 @@
-import gsap from 'gsap'
-import React, { useEffect, useRef } from 'react'
-import { Hero, Image, Overlay, SectionImage } from './components'
-import Container from './config/Container'
+import gsap from "gsap"
+import React, { useEffect, useRef } from "react"
+import { Hero, Image, Overlay, SectionImage } from "./components"
+import Container from "./config/Container"
 
 const App = () => {
   const bodyRef = useRef(null)
   useEffect(() => {
     gsap.to(bodyRef.current, {
-      visibility: 'visible'
+      visibility: "visible",
     })
   }, [])
   return (

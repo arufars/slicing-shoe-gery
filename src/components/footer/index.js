@@ -1,5 +1,5 @@
-import { Logo, navFooter, NavLink } from '../navbar/navItems'
-import { Copyright, Form } from './footer'
+import { Logo, navFooter, NavLink } from "../navbar/navItems"
+import { Copyright, Form } from "./footer"
 
 const Footer = () => {
   return (
@@ -23,8 +23,7 @@ const Footer = () => {
             href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj0jeXWg8v3AhWh6XMBHe1ZABQQFnoECBAQAQ&url=https%3A%2F%2Funsplash.com%2F&usg=AOvVaw07uHYdeyZQMneg6p8JTUC3'
             target='_blank'
             rel='noopener noreferrer'
-            className='my-5 text-xs text-gray-500 hover:text-black hover:underline'
-          >
+            className='my-5 text-xs text-gray-500 hover:text-black hover:underline'>
             Image by unplash
           </a>
         </div>
