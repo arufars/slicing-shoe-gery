@@ -47,7 +47,7 @@ const SectionImage = () => {
     })
 
     // gsap in image scale animation
-    imageSrc.current.map((item, index) => {
+    imageSrc.current.map((item) => {
       let time = gsap.timeline({
         scrollTrigger: {
           trigger: item,
