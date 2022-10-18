@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Content, DataSection, ImageSec, Subtitle } from './sectionComponent'
 import Section from '../../config/Section'
 import gsap from 'gsap'
